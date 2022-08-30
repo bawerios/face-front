@@ -15,7 +15,7 @@ import ClientEdit from '../pages/client/edit';
 import UserEdit from '../pages/user/edit';
 import Cookies from 'js-cookie'
 import Header from '../pages/header'
-import Ssl from '../../public/2A6E673EDDD182AECD9BED4609D0F7D3.txt'
+import Ssl from '../2A6E673EDDD182AECD9BED4609D0F7D3.txt'
 
 function isAuth(){
   var token = Cookies.get('token')
