@@ -15,7 +15,6 @@ import ClientEdit from '../pages/client/edit';
 import UserEdit from '../pages/user/edit';
 import Cookies from 'js-cookie'
 import Header from '../pages/header'
-import Ssl from '../2A6E673EDDD182AECD9BED4609D0F7D3.txt'
 
 function isAuth(){
   var token = Cookies.get('token')
@@ -39,7 +38,6 @@ const PrivateRoute = ({component: Component, ...rest}) => {
 export default function Routes() {
   return (
     <Router>
-      <Route exact path="/.well-known/pki-validation/2A6E673EDDD182AECD9BED4609D0F7D3" component={Ssl} />
       <Route exact path="/" component={Login} />
       <Route path="/register" component={Register} />
       <PrivateRoute path="/order" component={Order} />
